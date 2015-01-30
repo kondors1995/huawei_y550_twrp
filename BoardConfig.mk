@@ -20,13 +20,13 @@ TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/bq/vegetalte/kernel
-TARGET_CUSTOM_KERNEL_HEADERS := device/bq/vegetalte/include
+TARGET_PREBUILT_KERNEL := device/huawei/y550/kernel
+TARGET_CUSTOM_KERNEL_HEADERS := device/huawei/y550/include
 BOARD_KERNEL_CMDLINE := androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
-BOARD_MKBOOTIMG_ARGS := --dt device/bq/vegetalte/dt.img --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
+BOARD_MKBOOTIMG_ARGS := --dt device/huawei/y550/dt.img --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 
 # USB Mounting
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun0/file
@@ -38,8 +38,8 @@ BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 
 # TWRP-Specific
-TARGET_RECOVERY_FSTAB := device/bq/vegetalte/recovery/etc/recovery.fstab
-DEVICE_RESOLUTION := 720x1280
+TARGET_RECOVERY_FSTAB := device/huawei/y550/recovery/etc/recovery.fstab
+DEVICE_RESOLUTION := 480x854
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
 TW_TARGET_USES_QCOM_BSP := true

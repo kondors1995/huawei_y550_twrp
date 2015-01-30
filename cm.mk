@@ -1,9 +1,9 @@
 # Inherit device configuration
-$(call inherit-product, device/bq/vegetalte/device.mk)
+$(call inherit-product, device/huawei/y550/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := vegetalte
-PRODUCT_NAME := cm_vegetalte
-PRODUCT_BRAND := bq
-PRODUCT_MANUFACTURER := bq
-PRODUCT_MODEL := Aquaris E5
+PRODUCT_DEVICE := y550
+PRODUCT_NAME := cm_y550
+PRODUCT_BRAND := huawei
+PRODUCT_MANUFACTURER := Huawei
+PRODUCT_MODEL := Y550-L01
